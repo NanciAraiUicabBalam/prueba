@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 11-11-2021 a las 04:50:26
--- Versión del servidor: 5.7.31
--- Versión de PHP: 7.3.21
+-- Tiempo de generación: 11-11-2021 a las 07:42:30
+-- Versión del servidor: 10.4.10-MariaDB
+-- Versión de PHP: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -138,12 +139,14 @@ CREATE TABLE IF NOT EXISTS `pedido_detalle` (
 
 DROP TABLE IF EXISTS `perfil`;
 CREATE TABLE IF NOT EXISTS `perfil` (
+  `id_perfil` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `role_id` int(11) NOT NULL,
   `nombres` varchar(100) NOT NULL,
   `apellidos` varchar(100) NOT NULL,
   `direccion` varchar(255) NOT NULL,
   `telefono` varchar(10) NOT NULL,
+  PRIMARY KEY (`id_perfil`),
   KEY `user_id` (`user_id`),
   KEY `role_id` (`role_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -227,7 +230,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `password_hash` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `password_reset_token` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `status` smallint(6) NOT NULL DEFAULT '10',
+  `status` smallint(6) NOT NULL DEFAULT 10,
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL,
   `verification_token` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -235,14 +238,15 @@ CREATE TABLE IF NOT EXISTS `user` (
   UNIQUE KEY `username` (`username`),
   UNIQUE KEY `email` (`email`),
   UNIQUE KEY `password_reset_token` (`password_reset_token`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `user`
 --
 
 INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`, `verification_token`) VALUES
-(1, 'nanci.uicab', 'XUYuSJOaOW7FE0tIgB0BdK3NFLYvY4V9', '$2y$13$a9C9dovcv5q1W3FvE/hAdeVEILgg4crNLIQOz0UisqsBS610L.QSi', NULL, 'nanci.uicabbalam@itsva.edu.mx', 10, 1636517032, 1636517032, 'kEkRR3cInkDRvcbNrRvZwklxOvl2RAnc_1636517032');
+(1, 'nanci.uicab', 'XUYuSJOaOW7FE0tIgB0BdK3NFLYvY4V9', '$2y$13$a9C9dovcv5q1W3FvE/hAdeVEILgg4crNLIQOz0UisqsBS610L.QSi', NULL, 'nanci.uicabbalam@itsva.edu.mx', 10, 1636517032, 1636517032, 'kEkRR3cInkDRvcbNrRvZwklxOvl2RAnc_1636517032'),
+(3, 'Jonathan.Ortega', 'lKtaDtv2Su7GPvCR4vPgFGGSXctMoxjF', '$2y$13$quHUgMm6ntGLD1n8lzDmkeBfVr.4WuoHAu0wW8wDUZbJ7ZzWDq9kC', NULL, 'canul_aldair@hotmail.com', 9, 1636606485, 1636606485, 'EtGF24KIlV_4h0keQSm7nBLA6fsvSPnn_1636606485');
 
 --
 -- Restricciones para tablas volcadas
