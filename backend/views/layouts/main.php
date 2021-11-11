@@ -47,7 +47,7 @@ AppAsset::register($this);
             'template'=>'<a href="{url}" class="href_class">{label}</a>',
             'items' =>[ 
                         ['label' => 'Compras', 'url' => ['compras/index']],
-                        ['label' => 'Proyecto-Usuario', 'url' => ['perfil/index']],                                                    
+                        ['label' => 'Perfil', 'url' => ['perfil/index']],                                                    
                       ],
         ];
 
