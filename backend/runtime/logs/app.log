@@ -2244,3 +2244,370 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1636651692.0749
     'REQUEST_TIME' => 1636651692
 ]
+2021-11-11 18:04:58 [127.0.0.1][3][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36771 bytes' 
+
+in C:\wamp64\www\proyecto\prueba\vendor\opis\closure\functions.php:36
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\wamp64\\www\\p...', 36, Array)
+#1 C:\wamp64\www\proyecto\prueba\vendor\opis\closure\functions.php(36): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): Opis\Closure\unserialize('<<<<<<< HEAD\r\na...')
+#3 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile('C:\\wamp64\\www\\p...', Array)
+#4 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#6 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2\log\Logger.php(227): yii\log\Dispatcher->dispatch(Array, true)
+#7 [internal function]: yii\log\Logger->flush(true)
+#8 {main}
+2021-11-11 18:04:57 [127.0.0.1][3][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '98m2o0hso4gq5jrf9bgluoihsr'
+    '_csrf-backend' => '2e7b3a1dd04e1ec8b66c19533f179405f581037d7b11e5657bb58e8d06496dc2a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"v2WuZDPfB9wVkeqspSTqik7_G6AiOEIm\";}'
+    'advanced-frontend' => '1qhsim4aqtoeh3bt7pg6scskjh'
+    '_csrf-frontend' => '997ad5ef36b6980254d2862c9d6e0491c659b2ac6530cbef5a36faba9d69ea0aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"g_6qBHUIgEsSiXTkK3Ztg55rY1rshECh\";}'
+    '_identity-backend' => '6c0736e6437b789f77bb054eeadb61311926832ca4bfc6d94797f967497a1f5fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"k3_EdfXcYGhJVOnAf9rmjYjTibtZu7gW\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/prueba/backend/web/index.php'
+    '__id' => 3
+    '__authKey' => 'k3_EdfXcYGhJVOnAf9rmjYjTibtZu7gW'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/proyecto/prueba/backend/'
+    'HTTP_COOKIE' => 'advanced-backend=98m2o0hso4gq5jrf9bgluoihsr; _csrf-backend=2e7b3a1dd04e1ec8b66c19533f179405f581037d7b11e5657bb58e8d06496dc2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22v2WuZDPfB9wVkeqspSTqik7_G6AiOEIm%22%3B%7D; advanced-frontend=1qhsim4aqtoeh3bt7pg6scskjh; _csrf-frontend=997ad5ef36b6980254d2862c9d6e0491c659b2ac6530cbef5a36faba9d69ea0aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22g_6qBHUIgEsSiXTkK3Ztg55rY1rshECh%22%3B%7D; _identity-backend=6c0736e6437b789f77bb054eeadb61311926832ca4bfc6d94797f967497a1f5fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22k3_EdfXcYGhJVOnAf9rmjYjTibtZu7gW%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'PATH' => 'C:\\Program Files\\Rockwell Software\\RSCommon;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Azure Data Studio\\bin;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Apache-svn\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Users\\Gener\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.9;C:\\Users\\Gener\\AppData\\Roaming\\Python\\Python39\\Scripts;C:\\Program Files\\IBM\\SPSS\\Statistics\\22\\JRE\\bin;C:\\Program Files\\Git\\cmd;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) PHP/7.1.33 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) PHP/7.1.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/proyecto/prueba/backend/web/index.php'
+    'REMOTE_PORT' => '60951'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/proyecto/prueba/backend/web/'
+    'SCRIPT_NAME' => '/proyecto/prueba/backend/web/index.php'
+    'PHP_SELF' => '/proyecto/prueba/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1636653897.965
+    'REQUEST_TIME' => 1636653897
+]
+2021-11-11 18:06:02 [127.0.0.1][3][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36771 bytes' 
+
+in C:\wamp64\www\proyecto\prueba\vendor\opis\closure\functions.php:36
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\wamp64\\www\\p...', 36, Array)
+#1 C:\wamp64\www\proyecto\prueba\vendor\opis\closure\functions.php(36): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): Opis\Closure\unserialize('<<<<<<< HEAD\r\na...')
+#3 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile('C:\\wamp64\\www\\p...', Array)
+#4 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#6 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2\log\Logger.php(227): yii\log\Dispatcher->dispatch(Array, true)
+#7 [internal function]: yii\log\Logger->flush(true)
+#8 {main}
+2021-11-11 18:06:02 [127.0.0.1][3][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '98m2o0hso4gq5jrf9bgluoihsr'
+    '_csrf-backend' => '2e7b3a1dd04e1ec8b66c19533f179405f581037d7b11e5657bb58e8d06496dc2a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"v2WuZDPfB9wVkeqspSTqik7_G6AiOEIm\";}'
+    'advanced-frontend' => '1qhsim4aqtoeh3bt7pg6scskjh'
+    '_csrf-frontend' => '997ad5ef36b6980254d2862c9d6e0491c659b2ac6530cbef5a36faba9d69ea0aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"g_6qBHUIgEsSiXTkK3Ztg55rY1rshECh\";}'
+    '_identity-backend' => '6c0736e6437b789f77bb054eeadb61311926832ca4bfc6d94797f967497a1f5fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"k3_EdfXcYGhJVOnAf9rmjYjTibtZu7gW\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/prueba/backend/web/index.php'
+    '__id' => 3
+    '__authKey' => 'k3_EdfXcYGhJVOnAf9rmjYjTibtZu7gW'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/proyecto/prueba/backend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'HTTP_COOKIE' => 'advanced-backend=98m2o0hso4gq5jrf9bgluoihsr; _csrf-backend=2e7b3a1dd04e1ec8b66c19533f179405f581037d7b11e5657bb58e8d06496dc2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22v2WuZDPfB9wVkeqspSTqik7_G6AiOEIm%22%3B%7D; advanced-frontend=1qhsim4aqtoeh3bt7pg6scskjh; _csrf-frontend=997ad5ef36b6980254d2862c9d6e0491c659b2ac6530cbef5a36faba9d69ea0aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22g_6qBHUIgEsSiXTkK3Ztg55rY1rshECh%22%3B%7D; _identity-backend=6c0736e6437b789f77bb054eeadb61311926832ca4bfc6d94797f967497a1f5fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22k3_EdfXcYGhJVOnAf9rmjYjTibtZu7gW%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'PATH' => 'C:\\Program Files\\Rockwell Software\\RSCommon;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Azure Data Studio\\bin;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Apache-svn\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Users\\Gener\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.9;C:\\Users\\Gener\\AppData\\Roaming\\Python\\Python39\\Scripts;C:\\Program Files\\IBM\\SPSS\\Statistics\\22\\JRE\\bin;C:\\Program Files\\Git\\cmd;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) PHP/7.1.33 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) PHP/7.1.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/proyecto/prueba/backend/web/index.php'
+    'REMOTE_PORT' => '60973'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/proyecto/prueba/backend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/proyecto/prueba/backend/web/index.php'
+    'PHP_SELF' => '/proyecto/prueba/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1636653962.061
+    'REQUEST_TIME' => 1636653962
+]
+2021-11-11 18:06:47 [127.0.0.1][3][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36771 bytes' 
+
+in C:\wamp64\www\proyecto\prueba\vendor\opis\closure\functions.php:36
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\wamp64\\www\\p...', 36, Array)
+#1 C:\wamp64\www\proyecto\prueba\vendor\opis\closure\functions.php(36): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): Opis\Closure\unserialize('<<<<<<< HEAD\r\na...')
+#3 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile('C:\\wamp64\\www\\p...', Array)
+#4 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#6 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2\log\Logger.php(227): yii\log\Dispatcher->dispatch(Array, true)
+#7 [internal function]: yii\log\Logger->flush(true)
+#8 {main}
+2021-11-11 18:06:47 [127.0.0.1][3][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf-backend' => 'pSkpjF2xL_09oejKW7McKlCURCScYfEbyurp7_q8umfTG375B_V_m3-Yn5ww1m1ZIMcQVfUKxkSN3KiGtfnzCg=='
+    'Generator' => [
+        'modelClass' => 'backend\\models\\Empresa'
+        'searchModelClass' => 'backend\\models\\search\\EmpresaSearch'
+        'controllerClass' => 'backend\\controllers\\EmpresaController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '98m2o0hso4gq5jrf9bgluoihsr'
+    '_csrf-backend' => '2e7b3a1dd04e1ec8b66c19533f179405f581037d7b11e5657bb58e8d06496dc2a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"v2WuZDPfB9wVkeqspSTqik7_G6AiOEIm\";}'
+    'advanced-frontend' => '1qhsim4aqtoeh3bt7pg6scskjh'
+    '_csrf-frontend' => '997ad5ef36b6980254d2862c9d6e0491c659b2ac6530cbef5a36faba9d69ea0aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"g_6qBHUIgEsSiXTkK3Ztg55rY1rshECh\";}'
+    '_identity-backend' => '6c0736e6437b789f77bb054eeadb61311926832ca4bfc6d94797f967497a1f5fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"k3_EdfXcYGhJVOnAf9rmjYjTibtZu7gW\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/prueba/backend/web/index.php'
+    '__id' => 3
+    '__authKey' => 'k3_EdfXcYGhJVOnAf9rmjYjTibtZu7gW'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '557'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/proyecto/prueba/backend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_COOKIE' => 'advanced-backend=98m2o0hso4gq5jrf9bgluoihsr; _csrf-backend=2e7b3a1dd04e1ec8b66c19533f179405f581037d7b11e5657bb58e8d06496dc2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22v2WuZDPfB9wVkeqspSTqik7_G6AiOEIm%22%3B%7D; advanced-frontend=1qhsim4aqtoeh3bt7pg6scskjh; _csrf-frontend=997ad5ef36b6980254d2862c9d6e0491c659b2ac6530cbef5a36faba9d69ea0aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22g_6qBHUIgEsSiXTkK3Ztg55rY1rshECh%22%3B%7D; _identity-backend=6c0736e6437b789f77bb054eeadb61311926832ca4bfc6d94797f967497a1f5fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22k3_EdfXcYGhJVOnAf9rmjYjTibtZu7gW%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'PATH' => 'C:\\Program Files\\Rockwell Software\\RSCommon;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Azure Data Studio\\bin;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Apache-svn\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Users\\Gener\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.9;C:\\Users\\Gener\\AppData\\Roaming\\Python\\Python39\\Scripts;C:\\Program Files\\IBM\\SPSS\\Statistics\\22\\JRE\\bin;C:\\Program Files\\Git\\cmd;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) PHP/7.1.33 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) PHP/7.1.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/proyecto/prueba/backend/web/index.php'
+    'REMOTE_PORT' => '60977'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/proyecto/prueba/backend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/proyecto/prueba/backend/web/index.php'
+    'PHP_SELF' => '/proyecto/prueba/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1636654007.037
+    'REQUEST_TIME' => 1636654007
+]
+2021-11-11 18:06:53 [127.0.0.1][3][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 36771 bytes' 
+
+in C:\wamp64\www\proyecto\prueba\vendor\opis\closure\functions.php:36
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\wamp64\\www\\p...', 36, Array)
+#1 C:\wamp64\www\proyecto\prueba\vendor\opis\closure\functions.php(36): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): Opis\Closure\unserialize('<<<<<<< HEAD\r\na...')
+#3 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile('C:\\wamp64\\www\\p...', Array)
+#4 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2\log\Dispatcher.php(194): yii\debug\LogTarget->collect(Array, true)
+#6 C:\wamp64\www\proyecto\prueba\vendor\yiisoft\yii2\log\Logger.php(227): yii\log\Dispatcher->dispatch(Array, true)
+#7 [internal function]: yii\log\Logger->flush(true)
+#8 {main}
+2021-11-11 18:06:53 [127.0.0.1][3][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf-backend' => 'AzSxX17xT-iVH8wFn3qQ95qIGvlggwKXubSn8-2KMtV1BuYqBLUfjtcmu1P0H-GE6ttOiAnoNcj-guaaos97uA=='
+    'Generator' => [
+        'modelClass' => 'backend\\models\\Empresa'
+        'searchModelClass' => 'backend\\models\\search\\EmpresaSearch'
+        'controllerClass' => 'backend\\controllers\\EmpresaController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'answers' => [
+        '0348bc0de56b456b97e7c3dfa7775929' => '1'
+        'cd6b4aea632ef73cc96387f92bf641ac' => '1'
+        '39e504d54d5a8f00cbda09eaca64bb30' => '1'
+        '938710d89f008e0edc8e28463bc02cce' => '1'
+        '32d9f1c279a7a4c0148974868b910cc0' => '1'
+        'cbba245ed6c6e9ac2b6eae4c2ec96d3f' => '1'
+        '4a99c349c724c5854402c4ed7f6dcf89' => '1'
+        '3b5338ee966be90b20a57b338cac86d5' => '1'
+    ]
+    'generate' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '98m2o0hso4gq5jrf9bgluoihsr'
+    '_csrf-backend' => '2e7b3a1dd04e1ec8b66c19533f179405f581037d7b11e5657bb58e8d06496dc2a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"v2WuZDPfB9wVkeqspSTqik7_G6AiOEIm\";}'
+    'advanced-frontend' => '1qhsim4aqtoeh3bt7pg6scskjh'
+    '_csrf-frontend' => '997ad5ef36b6980254d2862c9d6e0491c659b2ac6530cbef5a36faba9d69ea0aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"g_6qBHUIgEsSiXTkK3Ztg55rY1rshECh\";}'
+    '_identity-backend' => '6c0736e6437b789f77bb054eeadb61311926832ca4bfc6d94797f967497a1f5fa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[3,\"k3_EdfXcYGhJVOnAf9rmjYjTibtZu7gW\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/prueba/backend/web/index.php'
+    '__id' => 3
+    '__authKey' => 'k3_EdfXcYGhJVOnAf9rmjYjTibtZu7gW'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '942'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost/proyecto/prueba/backend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_COOKIE' => 'advanced-backend=98m2o0hso4gq5jrf9bgluoihsr; _csrf-backend=2e7b3a1dd04e1ec8b66c19533f179405f581037d7b11e5657bb58e8d06496dc2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22v2WuZDPfB9wVkeqspSTqik7_G6AiOEIm%22%3B%7D; advanced-frontend=1qhsim4aqtoeh3bt7pg6scskjh; _csrf-frontend=997ad5ef36b6980254d2862c9d6e0491c659b2ac6530cbef5a36faba9d69ea0aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22g_6qBHUIgEsSiXTkK3Ztg55rY1rshECh%22%3B%7D; _identity-backend=6c0736e6437b789f77bb054eeadb61311926832ca4bfc6d94797f967497a1f5fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B3%2C%22k3_EdfXcYGhJVOnAf9rmjYjTibtZu7gW%22%2C2592000%5D%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'PATH' => 'C:\\Program Files\\Rockwell Software\\RSCommon;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Azure Data Studio\\bin;C:\\wamp64\\bin\\php\\php5.6.40;C:\\composer;C:\\Apache-svn\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Users\\Gener\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.9;C:\\Users\\Gener\\AppData\\Roaming\\Python\\Python39\\Scripts;C:\\Program Files\\IBM\\SPSS\\Statistics\\22\\JRE\\bin;C:\\Program Files\\Git\\cmd;C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) PHP/7.1.33 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) PHP/7.1.33'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/proyecto/prueba/backend/web/index.php'
+    'REMOTE_PORT' => '60980'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/proyecto/prueba/backend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/proyecto/prueba/backend/web/index.php'
+    'PHP_SELF' => '/proyecto/prueba/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1636654013.701
+    'REQUEST_TIME' => 1636654013
+]
