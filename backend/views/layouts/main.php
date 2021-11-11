@@ -48,7 +48,7 @@ AppAsset::register($this);
             'items' =>[ 
                         ['label' => 'Empresa', 'url' => ['empresa/index']], 
                         ['label' => 'Productos', 'url' => ['productos/index']],
-                        ['label' => 'Pedidos', 'url' => ['pedidos/index']],
+                        ['label' => 'Pedidos', 'url' => ['pedido/index']],
                         ['label' => 'Compras', 'url' => ['compras/index']],
                         ['label' => 'Perfil', 'url' => ['perfil/index']],  
                                                                         
