@@ -139,14 +139,14 @@ CREATE TABLE IF NOT EXISTS `pedido_detalle` (
 
 DROP TABLE IF EXISTS `perfil`;
 CREATE TABLE IF NOT EXISTS `perfil` (
-  `id_perfil` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `role_id` int(11) NOT NULL,
   `nombres` varchar(100) NOT NULL,
   `apellidos` varchar(100) NOT NULL,
   `direccion` varchar(255) NOT NULL,
   `telefono` varchar(10) NOT NULL,
-  PRIMARY KEY (`id_perfil`),
+  PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   KEY `role_id` (`role_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
