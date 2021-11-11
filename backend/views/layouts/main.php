@@ -46,8 +46,7 @@ AppAsset::register($this);
             'options' =>['class' =>'dropdown'],
             'template'=>'<a href="{url}" class="href_class">{label}</a>',
             'items' =>[ 
-                        ['label' => 'Empresa', 'url' => ['Empresa/index']], 
-                        ['label' => 'Productos', 'url' => ['Home/index']],      
+                        ['label' => 'Empresa', 'url' => ['empresa/index']], 
                         ['label' => 'Compras', 'url' => ['compras/index']],
                         ['label' => 'Perfil', 'url' => ['perfil/index']],  
                                                                         
