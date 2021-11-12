@@ -62,7 +62,7 @@ class PedidoDetalleSearch extends PedidoDetalle
             'empresa_id' => $this->empresa_id,
             'compra_id' => $this->compra_id,
             'precio_compra' => $this->precio_compra,
-            '`precio venta' => $this->`precio venta,
+            'precio_venta' => $this->precio_venta,
         ]);
 
         return $dataProvider;

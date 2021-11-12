@@ -20,7 +20,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'precio_compra')->textInput() ?>
 
-    <?= $form->field($model, '`precio venta')->textInput() ?>
+    <?= $form->field($model, 'precio_venta')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

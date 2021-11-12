@@ -11,7 +11,7 @@ use Yii;
  * @property int $empresa_id
  * @property int $compra_id
  * @property float $precio_compra
- * @property int $`precio venta
+ * @property int $precio_venta
  *
  * @property Compras $compra
  * @property Empresa $empresa
@@ -33,8 +33,8 @@ class PedidoDetalle extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['pedido_id', 'empresa_id', 'compra_id', 'precio_compra', '`precio venta'], 'required'],
-            [['pedido_id', 'empresa_id', 'compra_id', '`precio venta'], 'integer'],
+            [['pedido_id', 'empresa_id', 'compra_id', 'precio_compra', 'precio_venta'], 'required'],
+            [['pedido_id', 'empresa_id', 'compra_id', 'precio_venta'], 'integer'],
             [['precio_compra'], 'number'],
             [['pedido_id'], 'unique'],
             [['compra_id'], 'exist', 'skipOnError' => true, 'targetClass' => Compras::className(), 'targetAttribute' => ['compra_id' => 'id']],
@@ -53,7 +53,7 @@ class PedidoDetalle extends \yii\db\ActiveRecord
             'empresa_id' => 'Empresa ID',
             'compra_id' => 'Compra ID',
             'precio_compra' => 'Precio Compra',
-            '`precio venta' => '`precio Venta',
+            'precio_venta' => 'Precio Venta',
         ];
     }
 
