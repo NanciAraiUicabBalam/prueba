@@ -36,7 +36,10 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
+       
+     
     ];
+   
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
     } else {
@@ -49,12 +52,16 @@ AppAsset::register($this);
                         ['label' => 'Empresa', 'url' => ['empresa/index']], 
                         ['label' => 'Productos', 'url' => ['productos/index']],
                         ['label' => 'Pedidos', 'url' => ['pedido/index']],
+                        ['label' => 'Detalle de pedido', 'url' => ['pedido-detalle/index']],
                         ['label' => 'Compras', 'url' => ['compras/index']],
-                        ['label' => 'Perfil', 'url' => ['perfil/index']],  
+                        ['label' => 'Detalle de Compra', 'url' => ['compra-detalle/index']],
+                        ['label' => 'Detalle de pedido', 'url' => ['pedido-detalle/index']],
                                                                         
                       ],
+                     
         ];
 
+        $menuItems[] = ['label' => 'Perfil', 'url' => ['perfil/index']];
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post', ['class' => 'form-inline'])
             . Html::submitButton(
@@ -64,6 +71,7 @@ AppAsset::register($this);
             . Html::endForm()
             . '</li>';
     }
+    
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav'],
         'items' => $menuItems,
