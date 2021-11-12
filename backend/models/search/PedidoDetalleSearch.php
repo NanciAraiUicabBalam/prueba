@@ -17,7 +17,7 @@ class PedidoDetalleSearch extends PedidoDetalle
     public function rules()
     {
         return [
-            [['pedido_id', 'empresa_id', 'compra_id', '`precio venta'], 'integer'],
+            [['pedido_id', 'empresa_id', 'compra_id', 'precio_venta'], 'integer'],
             [['precio_compra'], 'number'],
         ];
     }
