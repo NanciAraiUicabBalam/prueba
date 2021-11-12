@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Productos', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Añadir Productos', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'nombre',
             'descripcion:ntext',
-            'precio_costo',
+           // 'precio_costo',
             'precio_venta',
             //'fecha_alta',
             //'empresa_id',
