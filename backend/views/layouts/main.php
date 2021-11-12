@@ -55,7 +55,7 @@ AppAsset::register($this);
                         ['label' => 'Detalle de pedido', 'url' => ['pedido-detalle/index']],
                         ['label' => 'Compras', 'url' => ['compras/index']],
                         ['label' => 'Detalle de Compra', 'url' => ['compra-detalle/index']],
-                        ['label' => 'Detalle de pedido', 'url' => ['pedido-detalle/index']],
+                       
                                                                         
                       ],
                      
