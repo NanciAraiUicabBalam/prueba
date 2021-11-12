@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\search\CompraDetalleSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Compra Detalles';
+$this->title = 'Detalles de compra';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="compra-detalle-index">
@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Compra Detalle', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Añadir detalles de compra', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
