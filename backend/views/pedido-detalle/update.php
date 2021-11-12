@@ -5,10 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\models\PedidoDetalle */
 
-$this->title = 'Actualizar  Detalles: ' . $model->pedido_id;
-$this->params['breadcrumbs'][] = ['label' => 'Pedido Detalles', 'url' => ['index']];
+$this->title = 'Actualizar  Detalles de compra: ' . $model->pedido_id;
+$this->params['breadcrumbs'][] = ['label' => 'Detalles del pedido', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->pedido_id, 'url' => ['view', 'pedido_id' => $model->pedido_id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = 'Actualizar';
 ?>
 <div class="pedido-detalle-update">
 

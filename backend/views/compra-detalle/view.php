@@ -6,8 +6,8 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model backend\models\CompraDetalle */
 
-$this->title = $model->compra_id;
-$this->params['breadcrumbs'][] = ['label' => 'Compra Detalles', 'url' => ['index']];
+$this->title = $model->factura_id;
+$this->params['breadcrumbs'][] = ['label' => 'Detalles de compra', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
@@ -16,8 +16,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'compra_id' => $model->compra_id, 'producto_id' => $model->producto_id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'compra_id' => $model->compra_id, 'producto_id' => $model->producto_id], [
+        <?= Html::a('Actualizar', ['update', 'compra_id' => $model->compra_id, 'producto_id' => $model->producto_id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Eliminar', ['delete', 'compra_id' => $model->compra_id, 'producto_id' => $model->producto_id], [
             'class' => 'btn btn-danger',
             'data' => [
                 'confirm' => 'Are you sure you want to delete this item?',
