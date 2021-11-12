@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\search\PedidoDetalleSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Pedido Detalles';
+$this->title = 'Detalles del pedido';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="pedido-detalle-index">
@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Pedido Detalle', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Añadir Detalle', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>

@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\models\PedidoDetalle */
 
-$this->title = 'Create Pedido Detalle';
+$this->title = 'Especificar detalles de pedido';
 $this->params['breadcrumbs'][] = ['label' => 'Pedido Detalles', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
